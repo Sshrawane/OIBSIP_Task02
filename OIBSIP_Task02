@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#qualifiction">Qualifications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <center><img src="img7.jpg" alt=""></center>
+        <h1><center>Welcome to My Portfolio</center></h1>
+        <p><center>Web Developer | Designer | Creative Thinker</center></p>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h2>Saloni shrawane</h2>
+            <p>Seeking an opportunity in a challenging environment where I
+                can deliver my best with my technical knowledge and functional
+                expertise and enhance my skills more and grow to be a key
+                player for the organization's overall development.
+                </p>
+            <p>A big picture and outgoing Computer Engineering student
+                seeking to be part of the Web Designing team. Proficient in
+                Javascript, HTML5 and CSS3.</p>
+        </div>
+    </section>
+
+    <section id="qualification">
+        <div class="container">
+            <h2>My Qualifications</h2>
+                <ul>
+                    <li>SSC</li>
+                    <li>HSC</li>
+                    <li>Persuing degree in B.Tech(Computer Engineering)</li>
+                </ul>
+        </div>
+    </section>
+
+    <section id="qualification">
+        <div class="container">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>C & C++</li>
+                <li>Team work</li>
+                <li>Leadership</li>
+                <li>Creativity</li>
+                <li>Adaptebality</li>
+                <li>Time Management</li>
+                <li>Communication</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>Built a calculator program using C</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>Buit an Accumen app for psycological quiz</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-info">
+                    <h3>Project 3</h3>
+                    <p>Built a laundry web-page</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="contact.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" class="input-field">
+                <input type="email" name="email" placeholder="Your Email" class="input-field">
+                <textarea name="message" placeholder="Your Message" class="input-field"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+CSS Code:
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#about {
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#projects {
+    padding: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.project img {
+    width: 300px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #060606;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px
